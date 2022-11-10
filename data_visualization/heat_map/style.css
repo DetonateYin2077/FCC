@@ -1,0 +1,37 @@
+body,
+text {
+  font-family: "Space Mono", monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #90a4ae;
+  color: #263238;
+}
+#x-axis text {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  text-anchor: end;
+}
+.tick.minor > line {
+  stroke-dasharray: 4;
+}
+.tick.minor > text {
+  display: none;
+}
+#title {
+  margin: 1rem 0 0.5rem 0;
+}
+#description {
+  margin: 0 0 1.5rem 0;
+}
+@media only screen and (min-width: 992px) {
+  #title {
+    margin: 2rem 0 0.5rem 0;
+  }
+  #description {
+    margin: 0 0 2.5rem 0;
+  }
+}
+footer {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
